@@ -1,0 +1,46 @@
+package academy.devdojo.springboot2.mapper;
+
+import academy.devdojo.springboot2.domain.Anime;
+import academy.devdojo.springboot2.domain.Anime.AnimeBuilder;
+import academy.devdojo.springboot2.requests.AnimePostRequestBody;
+import academy.devdojo.springboot2.requests.AnimePutRequestBody;
+import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2022-05-06T00:40:57-0300",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.3 (Private Build)"
+)
+@Component
+public class AnimeMapperImpl extends AnimeMapper {
+
+    @Override
+    public Anime toAnime(AnimePostRequestBody animePostRequestBody) {
+        if ( animePostRequestBody == null ) {
+            return null;
+        }
+
+        AnimeBuilder anime = Anime.builder();
+
+        anime.name( animePostRequestBody.getName() );
+
+        return anime.build();
+    }
+
+    @Override
+    public Anime toAnime(AnimePutRequestBody animePostRequestBody) {
+        if ( animePostRequestBody == null ) {
+            return null;
+        }
+
+        AnimeBuilder anime = Anime.builder();
+
+        if ( animePostRequestBody.getId() != null ) {
+            anime.id( animePostRequestBody.getId() );
+        }
+        anime.name( animePostRequestBody.getName() );
+
+        return anime.build();
+    }
+}

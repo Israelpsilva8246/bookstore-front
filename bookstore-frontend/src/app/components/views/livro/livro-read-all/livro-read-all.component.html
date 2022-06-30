@@ -1,0 +1,57 @@
+<mat-card>
+  <button class="add" (click)="navegarParaCriarLivro()" mat-raised-button color="accent">NOVO LIVRO</button>
+
+  <mat-toolbar color="primary">
+    <span>LIVROS</span>
+  </mat-toolbar>
+
+  <div *ngIf="livros$ | async as livros; else loading">
+    <table mat-table [dataSource]="livros" class="mat-elevation-z8">
+      <!-- Position Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let livro">{{ livro.id }}</td>
+      </ng-container>
+
+      <!-- Title Column -->
+      <ng-container matColumnDef="titulo">
+        <th mat-header-cell *matHeaderCellDef>TITULO</th>
+        <td mat-cell *matCellDef="let livro">{{ livro.titulo }}</td>
+      </ng-container>
+
+      <!-- livros Column -->
+      <ng-container matColumnDef="livros">
+        <th mat-header-cell *matHeaderCellDef>LER LIVRO</th>
+        <td mat-cell *matCellDef="let livro">
+          <a class="livros" routerLink="{{ livro.id }}/read">
+            <i class="material-icons">visibility</i>
+          </a>
+        </td>
+      </ng-container>
+
+       <!-- Acoes Column -->
+       <ng-container matColumnDef="acoes">
+        <th class="mat-header" mat-header-cell *matHeaderCellDef> Ações </th>
+        <td mat-cell *matCellDef="let livro">
+          <a class="edit" routerLink="{{ livro.id }}/update">
+            <i class="material-icons">edit</i>
+          </a>
+
+          <a class="delete" routerLink="{{ livro.id }}/delete">
+            <i class="material-icons">delete</i>
+          </a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  <ng-template #loading>
+    <div class="spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+  </ng-template>
+</mat-card>
+

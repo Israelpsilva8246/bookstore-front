@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+}
+
+.spinner {
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.livros {
+  margin-left: .3rem;
+  color: rgb(25, 107, 179);
+}
+
+.add {
+  margin-bottom: .5rem;
+}
+
+.edit {
+  color: rgb(69, 147, 216);
+}
+
+.delete {
+  color: rgb(226, 25, 19);
+  margin-left: .5rem;
+}
+
+.mat-header {
+  width: 5rem;
+}
+
+

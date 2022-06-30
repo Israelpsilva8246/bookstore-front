@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-05-06T00:40:57-0300",
-    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.3 (Private Build)"
+    date = "2022-06-02T22:53:42-0300",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.3 (Oracle Corporation)"
 )
 @Component
 public class AnimeMapperImpl extends AnimeMapper {

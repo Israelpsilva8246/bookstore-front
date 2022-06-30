@@ -52,7 +52,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         log.info("Password encode {}", passwordEncoder.encode("academy"));
         auth.inMemoryAuthentication()
-                .withUser("israel2")
+                .withUser("israel")
                 .password(passwordEncoder.encode("pontes"))
                 .roles("USER", "ADMIN")
                 .and()

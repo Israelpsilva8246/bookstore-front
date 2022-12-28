@@ -2,6 +2,7 @@ package com.israel.bookstorebackend.service;
 
 import com.israel.bookstorebackend.domain.Categoria;
 import com.israel.bookstorebackend.dtos.CategoriaDTO;
+import com.israel.bookstorebackend.exceptions.ObjectNotFoundException;
 import com.israel.bookstorebackend.repository.CategoriaRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,6 +14,7 @@ import org.mockito.MockitoAnnotations;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Objects;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -53,6 +55,19 @@ class CategoriaServiceTest {
         Assertions.assertEquals(ID, response.getId());
         Assertions.assertEquals(NOME, response.getNome());
         Assertions.assertEquals(DESCRICAO, response.getDescricao());
+    }
+
+    @Test
+    void whenFindByIdThenReturnAndObjectNotFoundException(){
+        Mockito.when(repository.findById(Mockito.anyLong())).thenThrow(new ObjectNotFoundException("Objeto não encontrado! Id: " + ID + ", Tipo: " + Categoria.class.getName()));
+
+        try{
+            service.findById(ID);
+        }catch (Exception ex){
+            assertEquals(ObjectNotFoundException.class, ex.getClass());
+            assertEquals("Objeto não encontrado! Id: " + ID + ", Tipo: " + Categoria.class.getName(), ex.getMessage());
+        }
+
     }
 
     @Test

@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class BookstoreBackendApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void main() {
+		BookstoreBackendApplication.main(new String[] {});
 	}
 
 }

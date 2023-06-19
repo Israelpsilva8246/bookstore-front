@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.recyclerview.model.Email;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class EmailAdapter extends RecyclerView.Adapter<EmailAdapter.EmailViewHolder> {
@@ -44,6 +45,10 @@ public class EmailAdapter extends RecyclerView.Adapter<EmailAdapter.EmailViewHol
     @Override
     public int getItemCount() {
         return emails.size();
+    }
+
+    public List<Email> getEmails() {
+        return emails;
     }
 
     class EmailViewHolder extends RecyclerView.ViewHolder {

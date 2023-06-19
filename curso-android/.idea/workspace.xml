@@ -9,14 +9,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0afe394-3a62-49cc-823e-d6bb08f5de63" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../curso-android/RecyclerView/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../curso-android/RecyclerView/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curso-android/RecyclerView/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../curso-android/RecyclerView/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curso-android/RecyclerView/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../curso-android/RecyclerView/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/java/com/example/recyclerview/EmailAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/java/com/example/recyclerview/EmailAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/java/com/example/recyclerview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/java/com/example/recyclerview/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/java/com/example/recyclerview/model/Emails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/java/com/example/recyclerview/model/Emails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../curso-android/RecyclerView/app/src/main/res/values/strings.xml" afterDir="false" />
+    <list default="true" id="6251aa02-6736-4010-9f63-a98882db50f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Retrofit/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retrofit/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retrofit/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retrofit/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retrofit/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/app/src/main/java/com/example/recyclerview/EmailAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/app/src/main/java/com/example/recyclerview/EmailAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/app/src/main/java/com/example/recyclerview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/app/src/main/java/com/example/recyclerview/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/app/src/main/java/com/example/recyclerview/model/Emails.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/app/src/main/java/com/example/recyclerview/model/Emails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecyclerView/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecyclerView/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +37,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2ROLl2llEKKakMFU02M0fHKPqeT" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ROOHA8DmA8NTaNrdjYOiE4I4Ab" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -110,11 +118,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a0afe394-3a62-49cc-823e-d6bb08f5de63" name="Changes" comment="" />
-      <created>1687116328548</created>
+      <changelist id="6251aa02-6736-4010-9f63-a98882db50f8" name="Changes" comment="" />
+      <created>1687117571904</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1687116328548</updated>
+      <updated>1687117571904</updated>
     </task>
     <servers />
   </component>

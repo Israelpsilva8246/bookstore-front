@@ -9,55 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c16fbc62-6b75-4078-871e-fb34b21a022a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/androidTest/java/com/example/recyclerview/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/java/com/example/recyclerview/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/app/src/test/java/com/example/recyclerview/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../RecyclerView/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="c16fbc62-6b75-4078-871e-fb34b21a022a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\israel.silva\.android\avd\Pixel_2_API_33.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[0123456789ABCDEF]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -98,8 +56,12 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/israel.silva/Documents/projetos/curso-android/RecyclerView",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+    "last_opened_file_path": "C:/Users/israe/OneDrive/Documentos/projetos/curso-android/RecyclerView",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">

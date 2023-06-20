@@ -10,15 +10,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.petshop.R;
 import com.example.petshop.data.model.Item;
+import com.example.petshop.data.network.response.ItemResponse;
 
 import java.util.List;
 
 public class ListaItemAdapter extends RecyclerView.Adapter<ListaItemAdapter.ListaItemViewHolder> {
 
-    private final List<Item> items;
+    private List<ItemResponse> items;
 
-
-    public ListaItemAdapter(List<Item> items) {
+    public ListaItemAdapter(List<ItemResponse> items) {
         this.items = items;
     }
 
@@ -33,7 +33,7 @@ public class ListaItemAdapter extends RecyclerView.Adapter<ListaItemAdapter.List
 
     @Override
     public void onBindViewHolder(@NonNull ListaItemViewHolder holder, int position) {
-        holder.bind(items.get(position));
+        holder.txtNomeItem.setText(items.get(position).getNome());
     }
 
     @Override
@@ -43,21 +43,21 @@ public class ListaItemAdapter extends RecyclerView.Adapter<ListaItemAdapter.List
 
     public class ListaItemViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView txtItem;
-
+        private TextView txtNomeItem;
         private Item item;
 
         public ListaItemViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            txtItem = itemView.findViewById(R.id.txt_item);
+            txtNomeItem = itemView.findViewById(R.id.txt_name_item);
 
         }
 
         public void bind(Item item) {
             this.item = item;
 
-            txtItem.setText(item.getName());
+            txtNomeItem.setText(item.getName());
+
         }
 
     }

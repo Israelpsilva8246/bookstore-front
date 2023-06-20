@@ -1,8 +1,8 @@
 package com.example.petshop.data.model;
 
-import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
 
-public class Item {
+public class Item implements Serializable {
 
     private int id;
 

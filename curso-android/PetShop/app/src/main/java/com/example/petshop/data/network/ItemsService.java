@@ -1,6 +1,6 @@
-package com.example.petshop.network;
+package com.example.petshop.data.network;
 
-import com.example.petshop.model.Item;
+import com.example.petshop.data.model.Item;
 
 import java.util.List;
 

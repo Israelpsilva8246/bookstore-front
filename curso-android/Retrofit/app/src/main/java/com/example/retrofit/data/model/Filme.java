@@ -1,14 +1,23 @@
 package com.example.retrofit.data.model;
 
-public class Filme {
+import java.io.Serializable;
 
-    private final String nome;
+public class Filme implements Serializable {
 
-    public Filme(String nome) {
-        this.nome = nome;
+    private final String titulo;
+
+    private final String caminhoPoster;
+
+    public Filme(String nome, String caminhoPoster) {
+        this.titulo = nome;
+        this.caminhoPoster = caminhoPoster;
     }
 
-    public String getNome() {
-        return nome;
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getCaminhoPoster() {
+        return caminhoPoster;
     }
 }

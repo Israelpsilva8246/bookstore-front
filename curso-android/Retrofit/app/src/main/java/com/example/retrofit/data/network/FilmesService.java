@@ -1,6 +1,6 @@
-package com.example.retrofit.network;
+package com.example.retrofit.data.network;
 
-import com.example.retrofit.network.response.FilmesResult;
+import com.example.retrofit.data.network.response.FilmesResult;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

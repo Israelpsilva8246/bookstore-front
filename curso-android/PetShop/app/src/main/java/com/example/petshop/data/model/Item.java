@@ -1,4 +1,4 @@
-package com.example.petshop.model;
+package com.example.petshop.data.model;
 
 import com.google.gson.annotations.SerializedName;
 

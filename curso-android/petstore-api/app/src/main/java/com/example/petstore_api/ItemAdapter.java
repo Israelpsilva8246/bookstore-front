@@ -18,31 +18,25 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     private List<Item> itemList;
 
-    private Context context;
-
-    public ItemAdapter(List<Item> items, Context context) {
-        this.itemList = items;
-        this.context = context;
+    public ItemAdapter(List<Item> itemList) {
+        this.itemList = itemList;
     }
 
     @NonNull
     @Override
-    public ItemAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.singleview, parent, false);
-
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        Item item = itemList.get(position);
-        holder.idTxt.setText("id: " + item.getId() + "\n");
-        holder.nameTxt.setText("name: " + item.getName() + "\n");
-        holder.descriptionTxt.setText("description: " + item.getDescription() + "\n");
-        holder.priceTxt.setText("price: " + String.valueOf(item.getPrice()) + "\n");
-        holder.imageUrlTxt.setText("imagem: " + item.getImage_url() + "\n");
+        holder.tvName.setText("Nome: " + itemList.get(position).getName());
+        holder.tvDescription.setText("Descrição do produto: " + itemList.get(position).getDescription());
+        holder.tvPrice.setText("Preço: $" + itemList.get(position).getPrice());
+        holder.tvImageUrl.setText("Imagem: " + itemList.get(position).getImageUrl());
+
     }
 
     @Override
@@ -52,16 +46,18 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView idTxt, nameTxt, descriptionTxt, priceTxt, imageUrlTxt;
+        TextView tvName;
+        TextView tvDescription;
+        TextView tvPrice;
+        TextView tvImageUrl;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            idTxt = itemView.findViewById(R.id.id_txt);
-            nameTxt = itemView.findViewById(R.id.name_txt);
-            descriptionTxt = itemView.findViewById(R.id.description_txt);
-            priceTxt = itemView.findViewById(R.id.price_txt);
-            imageUrlTxt = itemView.findViewById(R.id.image_url_txt);
+            tvName = itemView.findViewById(R.id.tvName);
+            tvDescription = itemView.findViewById(R.id.tvDescription);
+            tvPrice = itemView.findViewById(R.id.tvPrice);
+            tvImageUrl = itemView.findViewById(R.id.tvImageUrl);
         }
     }
 }

@@ -1,29 +1,25 @@
 package com.example.petstore_api.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 public class Item implements Serializable {
-
-    private int id;
 
     private String name;
 
     private String description;
 
-    private double price;
+    private String price;
 
-    private String image_url;
+    @SerializedName("image_url")
+    private String imageUrl;
 
-    public Item(int id, String name, String description, double price, String image_url) {
-        this.id = id;
+    public Item(String name, String description, String price, String imageUrl) {
         this.name = name;
         this.description = description;
         this.price = price;
-        this.image_url = image_url;
-    }
-
-    public int getId() {
-        return id;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -42,23 +38,19 @@ public class Item implements Serializable {
         this.description = description;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public String getImage_url() {
-        return image_url;
-    }
-
-    public void setImage_url(String image_url) {
-        this.image_url = image_url;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

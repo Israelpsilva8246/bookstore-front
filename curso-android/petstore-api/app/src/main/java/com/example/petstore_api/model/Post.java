@@ -1,37 +1,33 @@
 package com.example.petstore_api.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Post {
 
-    private int id;
-    private String title, body;
+    @SerializedName("title")
+    private String titulo;
 
-    public Post(int id, String title, String body) {
-        this.id = id;
-        this.title = title;
-        this.body = body;
+    @SerializedName("body")
+    private String texto;
+
+    public Post(String titulo, String texto) {
+        this.titulo = titulo;
+        this.texto = texto;
     }
 
-    public int getId() {
-        return id;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTexto() {
+        return texto;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
+    public void setTexto(String texto) {
+        this.texto = texto;
     }
 }

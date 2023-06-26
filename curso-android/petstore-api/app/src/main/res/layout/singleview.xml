@@ -12,41 +12,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
-
         <TextView
-            android:id="@+id/name_txt"
+            android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"/>
 
         <TextView
-            android:id="@+id/description_txt"
+            android:id="@+id/tvDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:layout_below="@id/name_txt"/>
+            android:layout_below="@id/tvName"/>
 
         <TextView
-            android:id="@+id/price_txt"
+            android:id="@+id/tvPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:layout_below="@id/description_txt"/>
+            android:layout_below="@id/tvDescription"/>
 
         <TextView
-            android:id="@+id/image_url_txt"
+            android:id="@+id/tvImageUrl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:layout_below="@id/price_txt"/>
+            android:layout_below="@id/tvPrice"/>
 
-        <TextView
-            android:id="@+id/id_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:layout_below="@id/image_url_txt"/>
     </RelativeLayout>
 
 

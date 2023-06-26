@@ -12,10 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"/>
+
         <TextView
             android:id="@+id/tvName"
+            android:layout_below="@id/ivImageUrl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            tools:text="Nome do item"
             android:padding="16dp"/>
 
         <TextView
@@ -23,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            tools:text="Descrição"
             android:layout_below="@id/tvName"/>
 
         <TextView
@@ -30,14 +39,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            tools:text="Preço"
             android:layout_below="@id/tvDescription"/>
-
-        <TextView
-            android:id="@+id/tvImageUrl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:layout_below="@id/tvPrice"/>
 
     </RelativeLayout>
 

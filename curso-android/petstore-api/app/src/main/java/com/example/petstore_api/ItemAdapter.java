@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.petstore_api.model.Item;
 import com.example.petstore_api.model.Post;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -31,12 +33,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
-        holder.tvName.setText("Nome: " + itemList.get(position).getName());
-        holder.tvDescription.setText("Descrição do produto: " + itemList.get(position).getDescription());
-        holder.tvPrice.setText("Preço: $" + itemList.get(position).getPrice());
-        holder.tvImageUrl.setText("Imagem: " + itemList.get(position).getImageUrl());
-
+        holder.bind(itemList.get(position));
     }
 
     @Override
@@ -46,10 +43,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
+        private Item item;
+
         TextView tvName;
         TextView tvDescription;
         TextView tvPrice;
-        TextView tvImageUrl;
+        ImageView imageItemView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -57,7 +56,19 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             tvName = itemView.findViewById(R.id.tvName);
             tvDescription = itemView.findViewById(R.id.tvDescription);
             tvPrice = itemView.findViewById(R.id.tvPrice);
-            tvImageUrl = itemView.findViewById(R.id.tvImageUrl);
+            imageItemView = itemView.findViewById(R.id.ivImageUrl);
+        }
+
+        public void bind(Item item) {
+            this.item = item;
+
+            tvName.setText("Nome: " + item.getName());
+            tvDescription.setText("Descrição: " + item.getDescription());
+            tvPrice.setText("Preço: R$" + item.getPrice());
+            Picasso.get()
+                    .load("https://8e84-190-111-131-171.ngrok-free.app/" + item.getImageUrl())
+                    .into(imageItemView);
         }
     }
+
 }

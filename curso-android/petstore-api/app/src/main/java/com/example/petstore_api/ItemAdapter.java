@@ -1,6 +1,5 @@
 package com.example.petstore_api;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.petstore_api.model.Item;
-import com.example.petstore_api.model.Post;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -33,7 +31,18 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.bind(itemList.get(position));
+        Item item = itemList.get(position);
+
+        String nome = item.getName();
+        String descricao = item.getDescription();
+        String preco = item.getPrice();
+        String imageUrl = item.getImageUrl();
+
+        holder.tvName.setText("Nome: " + nome);
+        holder.tvDescription.setText("Descrição: " + descricao);
+        holder.tvPrice.setText("Preço: R$" + preco);
+        Picasso.get().load(imageUrl).into(holder.imageItemView);
+
     }
 
     @Override
@@ -59,16 +68,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             imageItemView = itemView.findViewById(R.id.ivImageUrl);
         }
 
-        public void bind(Item item) {
-            this.item = item;
-
-            tvName.setText("Nome: " + item.getName());
-            tvDescription.setText("Descrição: " + item.getDescription());
-            tvPrice.setText("Preço: R$" + item.getPrice());
-            Picasso.get()
-                    .load("https://8e84-190-111-131-171.ngrok-free.app/" + item.getImageUrl())
-                    .into(imageItemView);
-        }
     }
 
 }

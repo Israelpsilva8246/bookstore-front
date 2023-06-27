@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/_00" />
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
@@ -16,31 +22,52 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:title="@string/app_name" />
+            android:background="@color/material_dynamic_neutral20"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bem-vindo!"
+                    android:textColor="@color/white"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_list"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/baseline_format_list_bulleted_24" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_below="@id/imageView4">
 
-        <Button
-            android:id="@+id/btn_list"
-            android:layout_width="100dp"
-            android:layout_height="48dp"
-
-            android:text="LISTAR" />
 
         <Button
             android:id="@+id/btn_create"
-            android:layout_width="100dp"
+            android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_below="@id/btn_list"
-            android:text="CRIAR" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/baseline_add_24" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -53,7 +80,8 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5"  />
+            app:layout_constraintVertical_bias="0.5" />
+
     </RelativeLayout>
 
 

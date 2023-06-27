@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -35,7 +35,7 @@
                     android:layout_height="wrap_content"
                     android:text="Bem-vindo!"
                     android:textColor="@color/white"
-                    android:textSize="34sp" />
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/btn_list"
@@ -43,7 +43,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="16dp"
-                    android:textColor="@color/white"
                     android:background="@drawable/baseline_format_list_bulleted_24" />
 
             </RelativeLayout>

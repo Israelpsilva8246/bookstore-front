@@ -10,12 +10,12 @@ public class Item implements Serializable {
 
     private String description;
 
-    private String price;
+    private double price;
 
     @SerializedName("image_url")
     private String imageUrl;
 
-    public Item(String name, String description, String price, String imageUrl) {
+    public Item(String name, String description, double price, String imageUrl) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -38,11 +38,11 @@ public class Item implements Serializable {
         this.description = description;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

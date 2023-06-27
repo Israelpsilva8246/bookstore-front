@@ -1,4 +1,4 @@
-package com.example.petstore_api;
+package com.example.petstore_api.activity;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.petstore_api.R;
 import com.example.petstore_api.model.Item;
 import com.squareup.picasso.Picasso;
 
@@ -35,12 +36,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
         String nome = item.getName();
         String descricao = item.getDescription();
-        String preco = item.getPrice();
+        double preco = item.getPrice();
         String imageUrl = item.getImageUrl();
 
-        holder.tvName.setText("Nome: " + nome);
-        holder.tvDescription.setText("Descrição: " + descricao);
-        holder.tvPrice.setText("Preço: R$" + preco);
+        holder.tvName.setText(nome);
+        holder.tvDescription.setText(descricao);
+        holder.tvPrice.setText("R$: " + preco);
         Picasso.get().load(imageUrl).into(holder.imageItemView);
 
     }

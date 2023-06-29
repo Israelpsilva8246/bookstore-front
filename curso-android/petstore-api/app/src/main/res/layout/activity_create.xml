@@ -21,9 +21,10 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:fontFamily="cursive"
+            android:padding="48dp"
             android:text="New Item"
             android:textSize="34sp"
-            android:padding="48dp"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +41,8 @@
                 android:ems="10"
                 android:hint="Nome"
                 android:inputType="text"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etPrice"
@@ -49,7 +51,8 @@
                 android:ems="10"
                 android:hint="Preço"
                 android:inputType="number|numberDecimal"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etDescription"
@@ -58,7 +61,8 @@
                 android:ems="10"
                 android:hint="Descriçao"
                 android:inputType="text"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etImageUrl"
@@ -67,17 +71,19 @@
                 android:ems="10"
                 android:hint="URL da imagem"
                 android:inputType="text"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnEnviar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/etImageUrl"
+                android:backgroundTint="@color/black"
                 android:gravity="center"
                 android:text="CRIAR"
-                android:backgroundTint="@color/black"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <ProgressBar
                 android:id="@+id/progressBar"

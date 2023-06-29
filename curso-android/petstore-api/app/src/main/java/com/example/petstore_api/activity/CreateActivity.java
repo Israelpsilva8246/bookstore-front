@@ -42,7 +42,7 @@ public class CreateActivity extends AppCompatActivity {
         btnEnviar = findViewById(R.id.btnEnviar);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://48d1-190-111-131-171.ngrok-free.app/") // Insira a URL base da sua API
+                .baseUrl(" https://9f39-190-111-131-160.ngrok-free.app/") // Insira a URL base da sua API
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

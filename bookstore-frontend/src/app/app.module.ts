@@ -33,7 +33,6 @@ import { SharedModule } from './shared/shared.module';
 import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 import { LivroReadComponent } from './components/views/livro/livro-read/livro-read.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +69,7 @@ import { LivroReadComponent } from './components/views/livro/livro-read/livro-re
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

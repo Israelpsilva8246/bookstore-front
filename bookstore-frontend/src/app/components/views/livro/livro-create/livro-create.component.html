@@ -1,7 +1,7 @@
 <form [formGroup]="form2">
   <h1>CRIANDO NOVO LIVRO</h1>
   <mat-form-field class="form">
-    <mat-label>Titulo</mat-label>
+    <mat-label>Título</mat-label>
     <input matInput [formControl]="titulo" [(ngModel)]="livro.titulo" required type="text" formControlName="nome" name="nome" placeholder="Ex. Estruturas de Dados e Algoritmos com JavaScript" maxlength="100">
     <mat-error *ngIf="titulo.invalid">{{ getMessage() }}</mat-error>
   </mat-form-field>
@@ -18,9 +18,25 @@
     <mat-error *ngIf="texto.invalid">{{ getMessage() }}</mat-error>
   </mat-form-field>
 
+  <mat-form-field>
+    <input
+  hidden
+  type="file"
+  accept=".csv, .txt"
+  #fileInput
+  (change)="fileChanged($event)"
+/>
+<button
+  mat-raised-button
+  color="primary"
+  (click)="fileInput.click()"
+>
+  Subir Archivo
+</button>
+  </mat-form-field>
+
   <div class="buttons">
     <button [disabled]="getMessage()" (click)="onCreate()" mat-raised-button color="primary">CRIAR</button>
     <button mat-raised-button (click)="onCancel()" color="warn">CANCELAR</button>
   </div>
 </form>
-

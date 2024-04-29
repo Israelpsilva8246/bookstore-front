@@ -62,6 +62,11 @@ export class LivroCreateComponent implements OnInit {
     this.location.back();
   }
 
+  fileChanged(event: any) {
+    const file: File = event.target.files[0];
+    // Faça o que você precisa com o arquivo, como armazená-lo ou exibi-lo na interface do usuário.
+  }
+
   getMessage() {
     if (this.titulo.invalid) {
       return "O campo TITULO deve conter entre 3 a 100 caracteres";
